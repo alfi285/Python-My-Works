@@ -1,8 +1,12 @@
 #Python program to check if one set is a subset of another?
 
-set1 = {"a", "b", "c", "d"}
+set1 = {1, 2, 3}
+set2 = {1, 2, 3, 4, 5}
 
-if "a"  in set1:
-    print("is a Subset")
+# Check if set_a is a subset of set_b
+is_subset = set1.issubset(set2)
+
+if is_subset==True:
+    print("Subset")
 else:
-    print("Not a subset")
+    print("Not subset")
