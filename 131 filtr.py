@@ -5,3 +5,6 @@
 
 market = {"apple": 0.5, "banana": 0.75, "orange": 0.65}
 
+filteredItem = {item for item,price in market.items() if price < 0.7}
+
+print(filteredItem)
