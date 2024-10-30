@@ -7,9 +7,11 @@
 
 income = 30000
 is_unpaid_debt = True
-is_loyality_card = False
+is_loyality_card = True
+employed = True
 
-if (is_loyality_card==True or income>=50000):
+if ((income >= 50000 and employed)and not is_unpaid_debt or is_loyality_card):
+
 
     print("Offer is granted")
 else:
